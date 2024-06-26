@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt a File</title>
+</head>
+<body>
+    <h1>Encrypt a File</h1>
+    <form action="/encrypt" method="post" enctype="multipart/form-data">
+        <label for="file">Choose file to encrypt:</label>
+        <input type="file" name="file" id="file" required>
+        <br>
+        <label for="password">Enter password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <input type="submit" value="Encrypt">
+    </form>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
