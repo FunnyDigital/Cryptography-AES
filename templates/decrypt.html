@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decrypt a File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Decrypt a File</h1>
-    <form action="/decrypt" method="post" enctype="multipart/form-data">
-        <label for="file">Choose file to decrypt:</label>
-        <input type="file" name="file" id="file" required>
-        <br>
-        <label for="password">Enter password:</label>
-        <input type="password" name="password" id="password" required>
-        <br>
-        <input type="submit" value="Decrypt">
-    </form>
-    <p><a href="/">Back to Home</a></p>
+    <div class="container">
+        <h1>Decrypt a File</h1>
+        <form action="/decrypt" method="post" enctype="multipart/form-data">
+            <label for="file">Choose file to decrypt:</label>
+            <input type="file" name="file" id="file" required>
+            <label for="password">Enter password:</label>
+            <input type="password" name="password" id="password" required>
+            <input type="submit" value="Decrypt">
+        </form>
+        <p><a href="/">Back to Home</a></p>
+    </div>
 </body>
 </html>

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Encryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to File Encryption</h1>
-    <p><a href="/encrypt">Encrypt a file</a></p>
-    <p><a href="/decrypt">Decrypt a file</a></p>
+    <div class="container">
+        <h1>Welcome to File Encryption</h1>
+        <p><a href="/encrypt">Encrypt a file</a></p>
+        <p><a href="/decrypt">Decrypt a file</a></p>
+    </div>
 </body>
 </html>
